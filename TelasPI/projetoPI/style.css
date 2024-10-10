@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+  
+.container {
+    width: 100vw; /* Largura da área principal */
+    height: 100vh; /* Altura da área principal */
+    position: relative;
+    background-color: white; /* Fundo branco */
+}
+
+.triangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 100vh solid #007863; /* Triângulo verde */
+}
+.header {
+    height: 150px;
+    width: 100%;
+    background-image: url(../projetoPI/10196_9B0CE0ECFFB9C848-1.webp);
+    background-size: cover; /* Ajusta a imagem para cobrir todo o header */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
