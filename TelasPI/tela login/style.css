@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 /* Estilos para a página principal */
 html, body {
     height: 100%;
@@ -121,4 +121,18 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+/* estilos para a logo */
+
+.image-logo{
+    position: absolute; 
+    top: 10px;       /* Distância do topo da tela */
+    right: 10px;    /* Distância da borda direita da tela */
+    z-index: 20;    /* a logo fique acima dos outros elementos */
+}
+
+.image-logo img{
+    width: 120px;   /* Ajuste do tamanho da logo */
+    height: auto;
 }
