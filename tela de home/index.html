@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto Ensino - Home</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <!-- Adicionando o CSS do carrossel -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link href="../tela de home/stylecarrossel.css" rel="stylesheet" />
 </head>
+
 <body>
     <header>
         <div class="Nomedainstituicao">
             <h1>Instituto Ensino</h1>
         </div>
-
         <a href="../TelasPI/tela login/login.html">
             <button class="sign-in-btn">Login</button>
         </a>
-        
     </header>
 
     <div class="header-image">
@@ -31,85 +35,120 @@
         </div>
     </div>
 
-    <!-- Carrossel logo abaixo da barra de busca -->
-    <section class="carousel">
-        <div class="carousel-nav">
-            <!-- Setas de navegação antes do container dos blocos -->
-            <i class='bx bx-chevron-left prev'></i>
-            <div class="carousel-container">
-                <!-- Bloco 1 -->
-                <div class="carousel-item">
-                    <img src="../imagens do projeto/Rectangle.png" alt="Escolas Eficientes">
-                    <div class="carousel-text">
-                        <h3>Escolas Eficientes</h3>
-                        <p>As instituições de ensino que estão preocupadas com a real percepção da Educação de cada aluno...</p>
-                        <button>Saiba mais</button>
+    <!-- Carrossel do segundo código integrado -->
+    <section class="course_section layout_padding">
+        <div class="container-fluid pr-0">
+            <div class="course_container">
+                <div class="course_owl-carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="../tela de home/c1.jpg" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h4>Aprenda Marketing digital</h4>
+                                <p>Aprenda a promover marcas online com SEO, redes sociais, campanhas pagas e análise de dados para otimizar resultados.</p>
+                                <a href="">Saiba Mais</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Bloco 2 -->
-                <div class="carousel-item">
-                    <img src="../imagens do projeto/Rectangle2.png" alt="Alunos Felizes e Pais Presentes">
-                    <div class="carousel-text">
-                        <h3>Alunos Felizes e Pais Presentes</h3>
-                        <p>No e-Schooling, os alunos e as famílias encontram um espaço de aprendizado e de conexão com a escola...</p>
-                        <button>Saiba mais</button>
+                    <div class="item">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="../tela de home/c2.jpg" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h4>Aprenda Direito</h4>
+                                <p>Estude leis e normas, desenvolvendo habilidades de argumentação e resolução de conflitos para atuar como advogado ou consultor jurídico.</p>
+                                <a href="">Saiba Mais</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Bloco 3 -->
-                <div class="carousel-item">
-                    <img src="../imagens do projeto/Rectangle3.png" alt="Professores Motivados">
-                    <div class="carousel-text">
-                        <h3>Professores Motivados</h3>
-                        <p>O e-Schooling permite a qualquer professor ter, à distância de um clique, tudo que ele necessita...</p>
-                        <button>Saiba mais</button>
+                    <div class="item">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="../tela de home/c3.jpg" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h4>Aprenda Excel</h4>
+                                <p>Desenvolva habilidades em Excel do básico ao intermediário para gerenciar e analisar dados de forma eficaz.</p>
+                                <a href="">Saiba Mais</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Bloco 4 -->
-                <div class="carousel-item">
-                    <img src="../imagens do projeto/Rectangle3.png" alt="Outro Bloco">
-                    <div class="carousel-text">
-                        <h3>Outro Tópico</h3>
-                        <p>Descrição breve sobre o tópico que aparecerá aqui...</p>
-                        <button>Saiba mais</button>
+                    <div class="item">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="../tela de home/c4.jpg" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h4>Aprenda Econômica</h4>
+                                <p>Aprenda a analisar mercados, distribuição de recursos e políticas econômicas, preparando-se para atuar em finanças, consultoria e análise econômica.</p>
+                                <a href="">Saiba Mais</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <i class='bx bx-chevron-right next'></i>
         </div>
+
+        <div class="carousel-nav">
+            
+        </div>
+        
+
     </section>
 
-    <footer>
-       <div class="footer-content">
+    <footer class="footer1">
+        <div class="footer-content">
             <div class="footer-logo">
                 <img src="../imagens do projeto/Pedro Eduardo's team library.png" alt="">
             </div>
 
             <div class="footer-text">
-                <div class="footer-section">
+                <div class="footer-section1">
                     <h4>Empresas Parceiras: </h4>
                     <ul>
                         <li>Hamburgueria</li>
                     </ul>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer-section1">
                     <h4>Contato: </h4>
                     <p>Email: institutoensino@gmail.com</p>
                     <p>Telefone: 4002-8922</p>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer-section1">
                     <h4>Sobre nós: </h4>
-                    <p>O Instituto Ensino é uma instituição dedicada à educação de qualidade, formando profissionais competentes em diversas áreas. Com professores experientes e ambiente moderno, promove aprendizado e desenvolvimento pessoal desde 2024.</p>
+                    <p>O Instituto Ensino é uma instituição dedicada à educação de qualidade, formando profissionais
+                        competentes em diversas áreas. Com professores experientes e ambiente moderno, promove
+                        aprendizado e desenvolvimento pessoal desde 2024.</p>
                 </div>
-
             </div>
-       </div>
+        </div>
     </footer>
 
-   <header class="header1">
+    <footer>
+        <div class="footer_section">
+            <div class="container">
+                <p>&copy; <span id="displayYear"></span> Todos os direitos reservados por
+                    <a href="https://html.design/">Instituto Ensino</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
-   </header>
+    <header class="header1">
 
+    </header>
+ 
+
+    <!-- jQuery e scripts do carrossel -->
+    <script src="../tela de home/jquery-3.4.1.mincarrossel.js"></script>
+    <script src="../tela de home/bootstrapcarrossel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../tela de home/customcarrossel.js"></script>
 </body>
+
 </html>

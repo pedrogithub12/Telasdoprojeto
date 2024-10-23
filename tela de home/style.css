@@ -121,36 +121,27 @@ header {
     cursor: pointer;
 }
 
-/* Posição central das setas */
 .carousel-nav {
-    position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    top: -50px; /* Ajusta a altura das setas */
+    justify-content: space-between; /* Para distribuir as setas nas extremidades */
 }
 
-.carousel-nav i {
-    font-size: 36px;
-    color: #007863;
-    cursor: pointer;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.prev {
-    position: absolute;
-    left: 0;
-}
-
+.prev,
 .next {
-    position: absolute;
-    right: 0;
+    font-size: 30px; /* Tamanho das setas */
+    color: #007863; /* Cor das setas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: color 0.3s; /* Animação de transição para a cor */
 }
+
+.prev:hover,
+.next:hover {
+    color: #000; /* Cor ao passar o mouse */
+}
+
 /* Footer */
-footer {
+.footer1 {
     background-color: #f0f0f0;
     padding: 20px 50px;
     display: flex;
@@ -170,21 +161,22 @@ footer {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    
 }
 .footer-text{
     display: flex;
     justify-content: space-between;
     width: 70%;
 }
-.footer-section{
+.footer-section1{
     margin-right: 40px;
 }
-.footer-section h4 {
+.footer-section1 h4 {
     margin-bottom: 10px;
     color: #007863;
 }
-.footer-section p, .footer-section li {
-    color: #555;
+.footer-section1 p, .footer-section li {
+    color: #000000;
     font-size: 14px;
 }
 .header1{

@@ -404,6 +404,7 @@ a:focus {
 .course_section {
   position: relative;
   color: #ffffff;
+  
 }
 
 .course_section .course_bg_box {
@@ -437,8 +438,8 @@ a:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 55, 70, 0.65)), to(rgba(14, 55, 70, 0.4)));
-  background: linear-gradient(to bottom, rgba(14, 55, 70, 0.65), rgba(14, 55, 70, 0.4));
+  /*background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 55, 70, 0.65)), to(rgba(14, 55, 70, 0.4)));
+  background: linear-gradient(to bottom, rgba(14, 55, 70, 0.65), rgba(14, 55, 70, 0.4));*/
 }
 
 .course_section .heading_container {
@@ -483,18 +484,15 @@ a:focus {
 .course_section .course_container .box .detail-box a {
   display: inline-block;
   padding: 7px 30px;
-  background-color: #be2623;
+  background-color: #007863;
   color: #ffffff;
   border-radius: 0;
-  border: 1px solid #be2623;
+  border: 1px solid #007863;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-.course_section .course_container .box .detail-box a:hover {
-  background-color: transparent;
-  color: #be2623;
-}
+
 
 .course_section .owl-carousel {
   position: unset;
@@ -516,24 +514,26 @@ a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
+/*
 .course_section .owl-carousel .owl-nav button.owl-next,
 .course_section .owl-carousel .owl-nav button.owl-prev {
-  width: 50px;
-  height: 50px;
-  margin: 3px 0;
-  border-radius: 100%;
-  outline: none;
-  background-color: #be2623;
-  color: #ffffff;
-  font-size: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 3px 0;
+    border-radius: 50%; /* Formato circular 
+    background-color: #007863; /* Cor de fundo 
+    color: #ffffff; /* Cor do ícone 
+    font-size: 20px;
+    transition: transform 0.3s; /* Efeito de transição 
 }
 
 .course_section .owl-carousel .owl-nav button.owl-next:hover,
 .course_section .owl-carousel .owl-nav button.owl-prev:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
+    transform: translateY(-3px); /* Move a seta para cima ao passar o mouse 
+}*/
+
+
+
 
 .course_section .owl-carousel .owl-nav button.owl-next span,
 .course_section .owl-carousel .owl-nav button.owl-prev span {
