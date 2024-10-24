@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: relative;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left, .right {
+    padding: 30px;
+}
+
+.left {
+    background-color: #007863;
+    flex: 2;
+}
+
+.right {
+    background-color: #221f1f;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.left h2 {
+    color: #ffffff;
+}
+
+.left p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-item .icon {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.right h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.discount {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.btn-inscreva {
+    background-color: #007863;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.payment-methods {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.method {
+    display: flex;
+    align-items: center;
+}
+
+.method .icon {
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+}
+
+.color{
+    color: #ffffff;
+}
