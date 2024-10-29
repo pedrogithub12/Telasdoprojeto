@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto Ensino - Home</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Popup.css">
+    
     
     <!-- Adicionando o CSS do carrossel -->
     
@@ -15,7 +14,6 @@
         integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
     <link href="../tela_de_home/stylecarrossel.css" rel="stylesheet" />
 </head>
-
 <body>
     <header>
         <div class="Nomedainstituicao">
@@ -25,18 +23,15 @@
             <button class="sign-in-btn">Login</button>
         </a>
     </header>
-
     <div class="header-image">
         <img src="../imagens do projeto/ESTUDAR-FORA-39.png" alt="imagem ilustrativa">
     </div>
-
     <div class="search-container">
         <div class="search-bar">
             <input type="text" placeholder="O que você procura?">
             <i class='bx bx-search'></i>
         </div>
     </div>
-
     <!-- Carrossel do segundo código integrado -->
     <section class="course_section layout_padding">
         <div class="container-fluid pr-0">
@@ -50,7 +45,7 @@
                             <div class="detail-box">
                                 <h4>Aprenda Marketing digital</h4>
                                 <p>Aprenda a promover marcas online com SEO, redes sociais, campanhas pagas e análise de dados para otimizar resultados.</p>
-                                <a href="javascript:void(0);" onclick="openPopup('index_curso_1.html')">Saiba Mais</a>
+                                <a href="#">Saiba Mais</a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +57,7 @@
                             <div class="detail-box">
                                 <h4>Aprenda Direito</h4>
                                 <p>Estude leis e normas, desenvolvendo habilidades de argumentação e resolução de conflitos para atuar como advogado ou consultor jurídico.</p>
-                                <a href="javascript:void(0);" onclick="openPopup('index_curso_2.html')">Saiba Mais</a>
+                                <a href="#">Saiba Mais</a>
                             </div>
                         </div>
                     </div>
@@ -74,7 +69,7 @@
                             <div class="detail-box">
                                 <h4>Aprenda Excel</h4>
                                 <p>Desenvolva habilidades em Excel do básico ao intermediário para gerenciar e analisar dados de forma eficaz.</p>
-                                <a href="javascript:void(0);" onclick="openPopup('index_curso_3.html')">Saiba Mais</a>
+                                <a href="#">Saiba Mais</a>
                             </div>
                         </div>
                     </div>
@@ -86,27 +81,23 @@
                             <div class="detail-box">
                                 <h4>Aprenda Econômica</h4>
                                 <p>Aprenda a analisar mercados, distribuição de recursos e políticas econômicas, preparando-se para atuar em finanças, consultoria e análise econômica.</p>
-                                <a href="javascript:void(0);" onclick="openPopup('index_curso_4.html')">Saiba Mais</a>
+                                <a href="#"">Saiba Mais</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="carousel-nav">
             
         </div>
         
-
     </section>
-
     <footer class="footer1">
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="../imagens do projeto/Pedro Eduardo's team library.png" alt="">
             </div>
-
             <div class="footer-text">
                 <div class="footer-section1">
                     <h4>Empresas Parceiras: </h4>
@@ -114,13 +105,11 @@
                         <li>Hamburgueria</li>
                     </ul>
                 </div>
-
                 <div class="footer-section1">
                     <h4>Contato: </h4>
                     <p>Email: institutoensino@gmail.com</p>
                     <p>Telefone: 4002-8922</p>
                 </div>
-
                 <div class="footer-section1">
                     <h4>Sobre nós: </h4>
                     <p>O Instituto Ensino é uma instituição dedicada à educação de qualidade, formando profissionais
@@ -130,7 +119,6 @@
             </div>
         </div>
     </footer>
-
     <footer>
         <div class="footer_section">
             <div class="container">
@@ -140,81 +128,15 @@
             </div>
         </div>
     </footer>
-
     <header class="header1">
-
     </header>
  
-
     <!-- jQuery e scripts do carrossel -->
     <script src="../tela_de_home/jquery-3.4.1.mincarrossel.js"></script>
     <script src="../tela_de_home/bootstrapcarrossel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="../tela_de_home/customcarrossel.js"></script>
-
-    <script>
-    function openPopup(courseFile) {
-    console.log("Popup sendo aberto para: " + courseFile); // Adicione esta linha para depuração
-    const overlay = document.createElement('div');
-    overlay.id = 'overlay';
-    overlay.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    `;
-
-    const popup = document.createElement('div');
-    popup.id = 'popup';
-    popup.style.cssText = `
-        width: 80%;
-        max-height: 80%; /* Define a altura máxima */
-        max-width: 600px;
-        background: white;
-        padding: 20px;
-        position: relative;
-        overflow-y: auto; /* Adiciona a barra de rolagem vertical */
-    `;
-
-    // Carregar o arquivo HTML específico para o curso clicado
-    fetch('telasPopUp_curso/' + courseFile)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro ao carregar o conteúdo');
-            }
-            return response.text();
-        })
-        .then(data => {
-            popup.innerHTML = data; 
-            overlay.appendChild(popup);
-            document.body.appendChild(overlay);
-        })
-        .catch(error => {
-            console.error(error);
-            popup.innerHTML = '<p>Erro ao carregar o conteúdo do curso.</p>';
-            overlay.appendChild(popup);
-            document.body.appendChild(overlay);
-        });
-
-    document.addEventListener('keydown', function (e) {
-        if (e.key === "Escape") closePopup();
-    });
-
-    function closePopup() {
-    const overlay = document.getElementById('overlay');
-    if (overlay) overlay.remove();
-}
-}
-
-
-    </script>
-
+   
     
 </body>
-
 </html>
