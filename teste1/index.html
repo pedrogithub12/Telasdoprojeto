@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
+    <title>CodePen - Navbar Pure CSS</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
+
 <body>
-    <div class="sidebar">
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <!-- Linha de separação -->
-        <div class="separator"></div>
-            <li><a href="#about">Sobre</a></li>
-            <!-- Linha de separação -->
-        <div class="separator"></div>
-            <li><a href="#services">Serviços</a></li>
-            <!-- Linha de separação -->
-        <div class="separator"></div>
-            <li><a href="#contact">Contato</a></li>
-            <!-- Linha de separação -->
-        <div class="separator"></div>
-            <li><a href="#logout">Sair</a></li>
-        </ul>
+    <!-- partial:index.partial.html -->
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox" />
+        <div id="nav-header"><a id="nav-title" href="" target="_blank">Instituto Ensino</a>
+            <div class="separator"></div>
+
+            
+            <hr/>
+            
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            
+        </div>
+        <div id="nav-content">
+            <div class="nav-button"><span>Acadêmico</span></div>
+            
+            <div class="nav-button"><i class="bx bx-book"></i><span>Direito</span></div>
+            <div class="nav-button"><i class="bx bx-bullseye"></i><span>Marketing Digital</span></div>
+            
+            <div class="nav-button"><i class="bx bx-line-chart"></i><span>Excel</span></div>
+            <div class="nav-button"><i class="bx bx-dollar"></i><span>Economia</span></div>
+
+            <div class="separator"></div>
+
+            <div class="nav-button"><i class="bx bx-pencil"></i><span>Editar Informações</span></div>
+            <div class="nav-button"><i class="bx bx-log-out"></i><span>Logout</span></div>
+
+          </div>
+          
     </div>
 
-    <div class="content">
-        <h1>Bem-vindo!</h1>
-        <p>Esta é a área de conteúdo.</p>
+    <div class="textoBoasVindas">
+        <h1>Bem Vindo, Professor!</h1>
     </div>
+
+    <!-- Logo no canto superior direito -->
+    <div class="image-logo">
+        <img src="../imagens do projeto/Pedro Eduardo's team library.png" alt="Logo">
+    </div>
+
+
+
 </body>
+
 </html>
