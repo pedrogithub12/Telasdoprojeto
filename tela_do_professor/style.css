@@ -68,7 +68,7 @@ body {
 }
 
 #nav-bar {
-  position: fixed;
+  position: absolute; /*caso eu queira deixar a sidebar fixa para acompanhar a tela posisiton: fixed; */
   left: 1vw;
   top: 1vw;
   height: calc(100% - 2vw);
@@ -339,10 +339,12 @@ hr {
   position: absolute;
   top: 10px;
   /* Distância do topo da tela */
-  right: 40px;
+  right: -500px;
+  
   /* Distância da borda direita da tela */
   z-index: 20;
   /* a logo fique acima dos outros elementos */
+
 }
 
 .image-logo img {
@@ -396,8 +398,9 @@ hr {
 
 .separator1 {
   border-top: 0.5px solid #CED8E5;
-  margin: 1px 30px;
+  margin: 1px 0;
   margin-left: 260px;
+  width: calc(119.5%); /* Ajusta para compensar o margin-left */
 }
 
 .participant-list {
@@ -469,6 +472,7 @@ h2 img {
 }
 
 table {
+  
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
@@ -538,3 +542,31 @@ tr:nth-child(even) {
   color: #000000;
   gap: 5px;
 }
+.BotaoEnviar{
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 410px;
+  margin-bottom: 20px;
+}
+.botao{
+  padding: 4px 5px;
+  font-size: 16px;
+  background-color: #007863;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.botao-editar, .botao-salvar {
+  background-color: #007863; /* Cor de fundo verde */
+  color: white; /* Cor do texto */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.botao-editar:hover, .botao-salvar:hover {
+  background-color: #005f50; /* Cor de fundo ao passar o mouse */
+}
+
