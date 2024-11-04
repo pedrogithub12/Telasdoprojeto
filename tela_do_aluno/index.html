@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Navbar Pure CSS</title>
+    <title>tela do aluno</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="script.js">
+    
 
 
 
@@ -29,15 +29,15 @@
         <div id="nav-content">
             <div class="nav-button"><span>Acadêmico</span></div>
 
-            <div class="nav-button"><i class="bx bx-book"></i><span>Direito</span></div>
-            <div class="nav-button"><i class="bx bx-bullseye"></i><span>Marketing Digital</span></div>
-
-            <div class="nav-button"><i class="bx bx-line-chart"></i><span>Excel</span></div>
-            <div class="nav-button"><i class="bx bx-dollar"></i><span>Economia</span></div>
+            <div class="separator"></div>
+            <div class="nav-button" onclick="carregarDadosMateria(1)"><i class="bx bx-book"></i><span>Direito</span></div>
+            <div class="nav-button" onclick="carregarDadosMateria(2)"><i class="bx bx-bullseye"></i><span>Marketing Digital</span></div>
+            <div class="nav-button" onclick="carregarDadosMateria(3)"><i class="bx bx-line-chart"></i><span>Excel</span></div>
+            <div class="nav-button" onclick="carregarDadosMateria(4)"><i class="bx bx-dollar"></i><span>Economia</span></div>
 
             <div class="separator"></div>
 
-            <div class="nav-button"><i class="bx bx-pencil"></i><span>Editar Informações</span></div>
+
             <div class="nav-button"><i class="bx bx-log-out"></i><span>Logout</span></div>
 
         </div>
@@ -45,13 +45,13 @@
     </div>
 
     <div class="textoBoasVindas">
-        <h1><span class="hand"><img src="hand.png" alt="icone"></span> Bem Vindo, Professor!</h1>
+        <h1><span class="hand"><img src="hand.png" alt="icone"></span> Bem-vindo à área do aluno!</h1>
     </div>
 
 
     <div class="gestao">
-        <span class="icon"><i class="bx bxs-cog"></i></span>
-        <h2>GESTÃO DE ALUNOS</h2>
+        <span class="icon"><i class="bx bx-edit-alt"></i></span>
+        <h2>QUADRO DE AVISOS</h2>
     </div>
 
     <div class="separator1"></div>
@@ -64,184 +64,72 @@
     <!-- Exemplo de um participante / <div class="participant-list"></div> -->
 
     <div class="table-container">
-        <h2 class="h2escrita">
 
-            <i class="bx bx-book icon1"></i>Participantes
-        </h2>
+        <textarea class="quadro-avisos" placeholder="Você recebera seus avisos por aqui..." readonly></textarea>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Alunos</th>
-                    <th>Curso</th>
-                    <th>Data</th>
-                    <th>Horario</th>
-                    <th>Localização</th>
-                    <th>Modalidade</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lucas Andrade</td>
-                    <td>Marketing</td>
-                    <td>25 de Jan, 2024</td>
-                    <td>14:30 PM</td>
-                    <td>Santo Amaro - SP</td>
-                    <td>Presencial</td>
-                    <td><span class="status-completed">Completado</span></td>
-                    
-                </tr>
-                <tr>
-                    <td>Camila Ferreira</td>
-                    <td>Economia</td>
-                    <td>5 de Fev, 2024</td>
-                    <td>19:00 PM</td>
-                    <td>Santo Amaro - SP</td>
-                    <td>Presencial</td>
-                    <td><span class="status-completed">Completado</span></td>
-                </tr>
-                <tr>
-                    <td>Gustavo Mendes</td>
-                    <td>Excel</td>
-                    <td>10 de Março, 2024</td>
-                    <td>13:30 PM</td>
-                    <td>Santo Amaro - SP</td>
-                    <td>EAD</td>
-                    <td><span class="status-upcoming">Incompleto</span></td>
-                </tr>
-                <tr>
-                    <td>Mariana Oliveira</td>
-                    <td>Excel</td>
-                    <td>2 de Abril, 2024</td>
-                    <td>13:30 PM</td>
-                    <td>Santo Amaro - SP</td>
-                    <td>EAD</td>
-                    <td><span class="status-upcoming">Incompleto</span></td>
-                </tr>
-                <tr>
-                    <td>Felipe Oliveira</td>
-                    <td>Direito</td>
-                    <td>15 de Maio, 2024</td>
-                    <td>07:30 AM</td>
-                    <td>Santo Amaro - SP</td>
-                    <td>Presencial</td>
-                    <td><span class="status-upcoming">Incompleto</span></td>
-                </tr>
-                <tr>
-                    <td>Larissa Souza</td>
-                    <td>Marketing</td>
-                    <td>8 de Junho, 2024</td>
-                    <td>14:30 PM</td>
-                    <td>Santo Amaro - SP</td>
-                    <td>Presencial</td>
-                    <td><span class="status-upcoming">Incompleto</span></td>
-                </tr>
-                <tr>
-                    <td>Rafael Costa</td>
-                    <td>Economia</td>
-                    <td>20 de Nov, 2024</td>
-                    <td>19:00 PM</td>
-                    <td>Santo Amaro - SP</td>
-                    <td>Presencial</td>
-                    <td><span class="status-upcoming">Incompleto</span></td>
-                </tr>
-                <!-- Continue adicionando as outras linhas de dados conforme necessário -->
-            </tbody>
-        </table>
-
-        
 
         <h2 class="h2_1escrita">
 
             <i class="bx bx-info-circle icon1"></i>Informações
         </h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Materias</th>
-                    <th>Notas</th>
-                    <th>Faltas</th>
-                    <th>Contato</th>
-                    <th>Atividades Entregues</th>
-                   
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Materia 1</td>
-                    <td>10</td>
-                    <td>0</td>
-                    <td>(11) 99305-1052</td>
-                    <td>5/5</td>
-                   
-                </tr>
-                <tr>
-                    <td>Materia 2</td>
-                    <td>8</td>
-                    <td>1</td>
-                    <td>(11) 98141-2009</td>
-                    <td>4/5</td>
-                    
-                </tr>
-                <tr>
-                    <td>Materia 3</td>
-                    <td>6</td>
-                    <td>3</td>
-                    <td>(11) 98871-8270</td>
-                    <td>2/5</td>
-                   
-                </tr>
-                <tr>
-                    <td>Materia 4</td>
-                    <td>7</td>
-                    <td>2</td>
-                    <td>(11) 99693-8074</td>
-                    <td>3/5</td>
-                    
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                   
-                </tr>
-                <!-- Continue adicionando as outras linhas de dados conforme necessário -->
-            </tbody>
-        </table>
+        <div class="fundo">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atividades</th>
+                        <th>Notas</th>
+                        <th>Faltas</th>
+                        <th>Data</th>
+                        <th>Nota Final</th>
 
-        <h2 class="h2_2escrita">
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="atividade">ADO 1</td>
+                        <td class="nota">2</td>
+                        <td class="faltas">0</td>
+                        <td class="data">03/09/2024</td>
+                        <td class="nota-final">10</td>
 
-            <i class="bx bx-edit-alt icon1"></i>Quadro de Avisos
-        </h2>
-        <textarea class="quadro-avisos" placeholder="Escreva os avisos aqui..."></textarea>
+                    </tr>
+                    <tr>
+                        <td class="atividade">ADO 2</td>
+                        <td class="nota">2</td>
+                        <td class="faltas">0</td>
+                        <td class="data">10/09/2024</td>
+                        
+                        
 
-        <div class="BotaoEnviar">
-            <h2>Deseja enviar este aviso? </h2> 
-            <button class="botao">Enviar</button>
+                    </tr>
+                    <tr>
+                        <td class="atividade">ADO 3</td>
+                        <td class="nota">2</td>
+                        <td class="faltas">0</td>
+                        <td class="data">13/09/2024</td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td class="atividade">PROVA</td>
+                        <td class="nota">4</td>
+                        <td class="faltas">0</td>
+                        <td class="data">20/09/2024</td>
+                       
+
+                    </tr>
+
+
+                    <!-- Continue adicionando as outras linhas de dados conforme necessário -->
+                </tbody>
+            </table>
         </div>
-        
-    
-    </div>                            
-</body>
 
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
